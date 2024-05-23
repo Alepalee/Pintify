@@ -3,6 +3,11 @@ body {
     font-family: "Mattone";
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 @font-face {
     font-family: "Mattone";
     src: url("font/Mattone-Black.woff2") format("woff2");
@@ -37,9 +42,7 @@ header{
 }
 
 .container_header a{
-    text-decoration: none;
-    color: black;
-    padding: 20px 0;
+    padding: 3vh 0;
 }
 
 .container_header a:hover{
@@ -64,7 +67,7 @@ footer{
     display: flex;
     justify-content: space-between;
     font-size: 1.214rem;
-    padding: 40px 0;
+    padding: 5vh 0;
 }
 
 .container_footer ul{
@@ -106,12 +109,12 @@ footer{
 }
 
 .hero{
-    height: 600px;
+    height: 91vh;
 }
 
 video{
     width: 100%;
-    height: 600px;
+    height: 91vh;
     object-fit: cover;
     position: absolute;
 }
@@ -139,4 +142,46 @@ video{
     width: 1032px;
     display: grid;
     margin: auto;
+}
+
+.introduzionehome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 48px 0;
+}
+
+.introduzionehome p{
+    display: grid;
+    grid-column: 1;
+    font-family: "Bitter", serif;
+    line-height: 140%;
+    font-weight:500;
+}
+
+.listehome ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 24px;
+}
+
+.listehome ul a{
+    color: white;
+    text-align: center;
+}
+
+.listehome li{
+    background-color: black;
+    height: 10vh;
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.listehome li:hover{
+    background-color: rgb(39, 39, 39);
+    color: #FDC144;
 }
