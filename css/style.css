@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Mattone";
@@ -42,7 +46,7 @@ header{
 }
 
 .container_header a{
-    padding: 3vh 0;
+    padding: 2vh 0;
 }
 
 .container_header a:hover{
@@ -67,7 +71,7 @@ footer{
     display: flex;
     justify-content: space-between;
     font-size: 1.214rem;
-    padding: 5vh 0;
+    padding: 4vh 0;
 }
 
 .container_footer ul{
@@ -93,6 +97,11 @@ footer{
 .accademia_footer a{
     display: flex;
     flex-direction: column;
+    font-weight: 600;
+}
+
+.accademia_footer p{
+    line-height: 120%;
 }
 
 .nomesito{
@@ -109,14 +118,27 @@ footer{
 }
 
 .hero{
-    height: 91vh;
+    height: 92vh;
 }
 
 video{
     width: 100%;
-    height: 91vh;
+    height: 92vh;
     object-fit: cover;
     position: absolute;
+}
+
+.frecciagiu{
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    top: -100px;
+    fill: white;
+}
+
+.frecciagiu:hover{
+    fill: #171717;
 }
 
 .testohero{
@@ -139,39 +161,93 @@ video{
 }
 
 .pagina{
-    width: 1032px;
     display: grid;
     margin: auto;
+    gap: 72px;
 }
 
 .introduzionehome{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    padding: 48px 0;
+    background-color: #171717;
+    width: 100%;
+    color: white;
+    height: 100vh;
 }
 
-.introduzionehome p{
+.testoinfo{
     display: grid;
-    grid-column: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.intro1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.intro2{
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.testoinfo p{
     font-family: "Bitter", serif;
     line-height: 140%;
-    font-weight:500;
+    font-weight: 500;
+    font-size: 32px;
 }
 
+.dipiu{
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+}
+
+.dipiu:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 10px ;
+    text-decoration-color: #FDC144 ;
+    text-underline-offset: -6px;
+    text-decoration-skip-ink: none;
+}
+
+h2{
+    background-color: #171717;
+    padding: 12px 0 12px 12px;
+    color: white;
+    border-radius: 24px;
+    text-align: center;
+}
 .container_card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
 }
 
+.container_card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 3fr;
+    gap: 24px;
+}
+
 .card{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #171717;
-    border-radius: 50px;
+    border-radius: 32px;
     color: white;
     padding: 32px 0;
     gap: 8px;
@@ -180,7 +256,7 @@ video{
 h4{
     font-size: 12px;
     font-weight: 100;
-    color: #838383;
+    color: #A0A0A0;
 }
 
 .card:hover{
@@ -189,10 +265,36 @@ h4{
     transition: .2s;
 }   
 
+.card:hover .icona{
+    fill: #171717;
+}
+
+.card:hover .sottotitolo_tipologia{
+    color: #696969;
+}
+
 svg{
     fill: rgb(255, 255, 255);
 }
 
-svg:hover{
-    fill: #171717;
+
+.contenuto_home .tipologie{
+    display: grid;
+    margin: auto;
+    gap: 24px;
+    width: 1032px;
+}
+
+.contenuto_home .ingredienti{
+    display: grid;
+    margin: auto;
+    gap: 24px;
+    width: 1032px;
+    padding-bottom: 72px;
+}
+
+.contenuto_home{
+    gap: 48px;
+    display: grid;
+    padding: 24px 0;
 }
