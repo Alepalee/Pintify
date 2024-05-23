@@ -208,13 +208,14 @@ video{
     color: white;
     font-size: 42px;
     text-align: center;
+    font-weight: 900
 }
 
 .dipiu:hover{
     text-decoration: underline;
-    text-decoration-thickness: 10px ;
-    text-decoration-color: #FDC144 ;
-    text-underline-offset: -6px;
+    text-decoration-thickness: 32px ;
+    text-decoration-color: #d4950c ;
+    text-underline-offset: -32px;
     text-decoration-skip-ink: none;
 }
 
