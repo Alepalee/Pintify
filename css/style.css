@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: "Mattone";
+}
+
+@font-face {
+    font-family: "Mattone";
+    src: url("font/Mattone-Black.woff2") format("woff2");
+    src: url("font/Mattone-Bold.woff2") format("woff2");
+    src: url("font/Mattone-Regular.woff2") format("woff2");
+  }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDC144;
+}
+
+.container_header{
+    width: 1032px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.214rem;
+}
+
+.container_header a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 0;
+}
+
+.container_header a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 10px ;
+    text-decoration-color: rgb(255, 255, 255) ;
+    text-underline-offset: -6px;
+    text-decoration-skip-ink: none;
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDC144;
+}
+
+.container_footer{
+    width: 1032px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.214rem;
+    padding: 40px 0;
+}
+
+.container_footer ul{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.container_footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.container_footer a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 10px ;
+    text-decoration-color: rgb(255, 255, 255) ;
+    text-underline-offset: -6px;
+    text-decoration-skip-ink: none;
+}
+
+.accademia_footer a{
+    display: flex;
+    flex-direction: column;
+}
+
+.nomesito{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#home{
+    text-decoration: underline;
+    text-decoration-thickness: 10px ;
+    text-decoration-color: rgb(255, 255, 255) ;
+    text-underline-offset: -6px;
+    text-decoration-skip-ink: none;
+}
+
+.hero{
+    height: 600px;
+}
+
+video{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.testohero{
+    width: 1032px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    height: 100%;
+    margin: auto;    
+    text-align: center;
+}
+
+.testohero h1{
+    font-size: 72px;
+    width: 840px;
+    line-height: 100%;
+}
+
+.pagina{
+    width: 1032px;
+    display: grid;
+    margin: auto;
+}
