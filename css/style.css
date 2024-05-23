@@ -159,29 +159,40 @@ video{
     font-weight:500;
 }
 
-.listehome ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+.container_card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
 }
 
-.listehome ul a{
-    color: white;
-    text-align: center;
-}
-
-.listehome li{
-    background-color: black;
-    height: 10vh;
-    width: 30vh;
+.card{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border-radius: 12px;
+    justify-content: center;
+    background-color: #171717;
+    border-radius: 50px;
+    color: white;
+    padding: 32px 0;
+    gap: 8px;
 }
 
-.listehome li:hover{
-    background-color: rgb(65, 65, 65);
-    color: #FDC144;
+h4{
+    font-size: 12px;
+    font-weight: 100;
+    color: #838383;
+}
+
+.card:hover{
+    background-color: #FDC144;
+    color: #171717;
+    transition: .2s;
+}   
+
+svg{
+    fill: rgb(255, 255, 255);
+}
+
+svg:hover{
+    fill: #171717;
 }
