@@ -46,7 +46,7 @@ header{
 }
 
 .container_header a{
-    padding: 2vh 0;
+    padding: 1.6vh 0;
 }
 
 .container_header a:hover{
@@ -118,12 +118,12 @@ footer{
 }
 
 .hero{
-    height: 92vh;
+    height: 93vh;
 }
 
 video{
     width: 100%;
-    height: 92vh;
+    height: 93vh;
     object-fit: cover;
     position: absolute;
 }
@@ -163,7 +163,7 @@ video{
 .pagina{
     display: grid;
     margin: auto;
-    gap: 72px;
+    gap: 62px;
 }
 
 .introduzionehome{
@@ -207,8 +207,9 @@ video{
     grid-column-end: 4;
     color: white;
     font-size: 42px;
-    text-align: center;
-    font-weight: 900
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
 }
 
 .dipiu:hover{
@@ -220,12 +221,13 @@ video{
 }
 
 h2{
-    background-color: #171717;
     padding: 12px 0 12px 12px;
-    color: white;
+    color: #171717;
     border-radius: 24px;
     text-align: center;
+    font-size: 32px;
 }
+
 .container_card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -282,20 +284,32 @@ svg{
 .contenuto_home .tipologie{
     display: grid;
     margin: auto;
-    gap: 24px;
+    gap: 12px;
     width: 1032px;
 }
 
 .contenuto_home .ingredienti{
     display: grid;
     margin: auto;
-    gap: 24px;
+    gap: 12px;
     width: 1032px;
     padding-bottom: 72px;
 }
 
 .contenuto_home{
-    gap: 48px;
+    gap: 62px;
     display: grid;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 }
+
+.testoinfo{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s ease;
+  }
+  
+  .testoinfo.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
