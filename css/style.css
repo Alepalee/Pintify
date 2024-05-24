@@ -163,7 +163,6 @@ video{
 .pagina{
     display: grid;
     margin: auto;
-    gap: 62px;
 }
 
 .introduzionehome{
@@ -221,7 +220,6 @@ video{
 }
 
 h2{
-    padding: 12px 0 12px 12px;
     color: #171717;
     border-radius: 24px;
     text-align: center;
@@ -236,8 +234,8 @@ h2{
 
 .container_card2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 3fr 3fr; */
     gap: 24px;
 }
 
@@ -252,7 +250,7 @@ h2{
     background-color: #171717;
     border-radius: 32px;
     color: white;
-    padding: 32px 0;
+    padding: 4vh 0;
     gap: 8px;
 }
 
@@ -284,22 +282,21 @@ svg{
 .contenuto_home .tipologie{
     display: grid;
     margin: auto;
-    gap: 12px;
+    gap: 24px;
     width: 1032px;
 }
 
 .contenuto_home .ingredienti{
     display: grid;
     margin: auto;
-    gap: 12px;
+    gap: 24px;
     width: 1032px;
-    padding-bottom: 72px;
 }
 
 .contenuto_home{
-    gap: 62px;
+    gap: 72px;
     display: grid;
-    /* padding: 24px 0; */
+    padding: 72px 0;
 }
 
 .testoinfo{
