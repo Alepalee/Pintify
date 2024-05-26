@@ -4,7 +4,9 @@ html{
 
 body {
     margin: 0;
-    font-family: "Mattone";
+    font-family: "unbounded","Mattone","field-gothic-xwide", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 a{
@@ -90,7 +92,7 @@ footer{
 .accademia_footer a{
     display: flex;
     flex-direction: column;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .accademia_footer p{
@@ -98,7 +100,7 @@ footer{
 }
 
 .nomesito{
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -111,12 +113,12 @@ footer{
 }
 
 .hero{
-    height: 93vh;
+    height: 100vh;
 }
 
 video{
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
 }
@@ -126,7 +128,7 @@ video{
     display: flex;
     margin: auto;
     justify-content: center;
-    top: -100px;
+    top: -200px;
     fill: white;
 }
 
@@ -149,8 +151,9 @@ video{
 
 .testohero h1{
     font-size: 72px;
-    width: 840px;
+    width: 870px;
     line-height: 100%;
+    font-weight: 900;
 }
 
 .pagina{
