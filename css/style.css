@@ -4,7 +4,7 @@ html{
 
 body {
     margin: 0;
-    font-family: "unbounded","field-gothic-xwide","Mattone", sans-serif;
+    font-family: "gamay-expanded","Mattone","unbounded","field-gothic-xwide", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -145,13 +145,13 @@ video{
     text-transform: uppercase;
     align-items: center;
     height: 100%;
-    margin: auto;    
+    margin: auto;
     text-align: center;
 }
 
 .testohero h1{
     font-size: 72px;
-    width: 870px;
+    width: 50vw;
     line-height: 100%;
     font-weight: 900;
 }
@@ -166,14 +166,17 @@ video{
     width: 100%;
     color: white;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .testoinfo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 1fr;
-    width: 1200px;
-    height: 100%;
+    /* grid-template-rows: 2fr 2fr 1fr; */
+    width: 1032px;
+    gap: 24px;
+    /* height: 100%; */
     margin: auto;
     align-items: center;
 }
@@ -193,7 +196,7 @@ video{
     font-family: "Bitter", serif;
     line-height: 140%;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
 }
 
 .dipiu{
@@ -260,7 +263,7 @@ h4{
     background-color: #FDC144;
     color: #171717;
     transition: .2s;
-}   
+}
 
 .card:hover .icona{
     fill: #171717;
@@ -301,7 +304,7 @@ svg{
     opacity: 0;
     transition: 2s ease;
   }
-  
+
   .testoinfo.active{
     transform: translateY(0);
     opacity: 1;
