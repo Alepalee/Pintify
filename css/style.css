@@ -140,7 +140,7 @@ footer{
 
 .herocont{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     height: 100vh;
     width: 1032px;
     margin: auto;
@@ -201,18 +201,20 @@ video{
     height: 100%;
     margin: auto;
     text-align: left;
+    width: 100%;
 }
 
 .testoheroalt h1{
+    display: flex;
+    justify-content: center;
     font-size: 76px;
-    width: 60vw;
     line-height: 100%;
     font-variation-settings: "wdth" 142, "wght" 700;
 }
 
 .testohero h1{
-    font-size: 76px;
-    width: 40vw;
+    font-size: 5vw;
+    width: 60vw;
     line-height: 100%;
     font-variation-settings: "wdth" 142, "wght" 700;
 }
@@ -233,6 +235,7 @@ video{
     color: white;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -433,4 +436,44 @@ h5{
 
 .containertestohero{
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.containertestohero .testoheroalt{
+    grid-row: 2;
+}
+
+.didascaliahero{
+    font-family: "bitter", serif;
+    display: flex;
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 500;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.nav-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    width: 1032px;
+    margin: auto;
+}
+
+.nav-link{
+    color: #171717;
+    background-color: #FFFEF6;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+.nav-link:hover{
+    background-color: #FDC144;
 }
