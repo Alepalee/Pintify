@@ -205,7 +205,7 @@ video{
 
 .testoheroalt h1{
     font-size: 76px;
-    width: 40vw;
+    width: 60vw;
     line-height: 100%;
     font-variation-settings: "wdth" 142, "wght" 700;
 }
@@ -429,4 +429,8 @@ p{
 h5{
     font-variation-settings: "wdth" 142, "wght" 500;
     font-size: 24px;
+}
+
+.containertestohero{
+    display: grid;
 }
