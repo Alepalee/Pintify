@@ -4,8 +4,9 @@ html{
 
 body {
     margin: 0;
-    font-family: "gamay-expanded","Mattone","unbounded","field-gothic-xwide", sans-serif;
+    font-family: "gamay-variable","Mattone","unbounded","field-gothic-xwide", sans-serif;
     font-weight: 700;
+    font-variation-settings: "wdth" 142, "wght" 600;
     font-style: normal;
 }
 
@@ -44,6 +45,7 @@ header{
 
 .container_header a{
     position: relative;
+    font-variation-settings: "wdth" 142, "wght" 400;
 }
 
 .container_header a:after {    
@@ -67,6 +69,7 @@ header{
 
 .container_footer a{
     position: relative;
+    font-variation-settings: "wdth" 142, "wght" 400;
 }
 
 .container_footer a:after {    
@@ -124,7 +127,7 @@ footer{
 .accademia_footer a{
     display: flex;
     flex-direction: column;
-    font-weight: 900;
+    font-variation-settings: "wdth" 142, "wght" 600;
 }
 
 .accademia_footer p{
@@ -132,7 +135,6 @@ footer{
 }
 
 .nomesito{
-    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -182,10 +184,10 @@ video{
 }
 
 .testohero h1{
-    font-size: 72px;
-    width: 50vw;
+    font-size: 76px;
+    width: 40vw;
     line-height: 100%;
-    font-weight: 900;
+    font-variation-settings: "wdth" 142, "wght" 700;
 }
 
 .pagina{
@@ -284,6 +286,10 @@ h2{
     color: white;
     padding: 4vh 0;
     gap: 8px;
+}
+
+h3{
+    font-variation-settings: "wdth" 142, "wght" 400;
 }
 
 h4{
