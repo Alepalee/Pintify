@@ -233,7 +233,6 @@ video{
     background-color: #171717;
     width: 100%;
     color: white;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,9 +244,8 @@ video{
     /* grid-template-rows: 2fr 2fr 1fr; */
     width: 1032px;
     gap: 24px;
-    /* height: 100%; */
     margin: auto;
-    padding: 0 24px;
+    padding: 128px 24px;
     align-items: center;
 }
 
@@ -266,29 +264,18 @@ video{
     grid-column-end: 4;
     color: white;
     font-size: 42px;
-    font-weight: 900;
     display: flex;
     justify-content: center;
     padding-top: 24px;
+    font-variation-settings: "wdth" 142, "wght" 500;
 }
 
-.dipiu:after {
-    content: '';
-    position: absolute;
-    width: 25%;
-    transform: scaleX(0);
-    border-radius: 5px;
-    height: 4px;
-    bottom: -4px;
-    left: 100;
-    background: #FDC144;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.dipiu:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.dipiu:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #ffae00;
+    text-underline-offset: 6px;
+    text-decoration-skip-ink: auto;
 }
 
 h2{
@@ -372,7 +359,7 @@ svg{
 
 p{
     font-family: "Bitter", serif;
-    
+
 }
 
 .testoinfo{
@@ -438,7 +425,7 @@ h5{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
 .containertestohero .testoheroalt{
@@ -461,6 +448,7 @@ h5{
     gap: 24px;
     width: 1032px;
     margin: auto;
+    padding: 128px 24px 0 24px;
 }
 
 .nav-link{
