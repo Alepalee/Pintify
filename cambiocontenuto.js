@@ -1,8 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
   let navLinks = document.querySelectorAll(".introduzionehome .nav-link");
   
+  const searchParams = new URLSearchParams(document.location.search);
+  const type = searchParams.has("type") ? searchParams.get("type") : "ale"
 
-  navLinks[0].classList.add("active");
+if (type == "ale")  navLinks[0].classList.add("active");
+if (type == "lager")  navLinks[1].classList.add("active");
+if (type == "lambic")  navLinks[2].classList.add("active");
+
+if (searchParams.has("type")) document.getElementById("introduzione").scrollIntoView({
+  behavior: 'smooth'
+})
+
+if (type == "acqua")  navLinks[0].classList.add("active");
+if (type == "lievito")  navLinks[1].classList.add("active");
+if (type == "luppolo")  navLinks[3].classList.add("active");
+if (type == "cereali")  navLinks[2].classList.add("active");
+
+
+
+
 
   navLinks.forEach((navLink, activeIndex) => {
     navLink.addEventListener("click", () => {
