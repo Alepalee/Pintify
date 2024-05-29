@@ -187,7 +187,7 @@ video{
 }
 
 .frecciagiualt:hover{
-    fill: #FDC144;
+    fill: #FDC144;  
 }
 
 .frecciagiu:hover{
@@ -283,6 +283,10 @@ video{
     font-variation-settings: "wdth" 142, "wght" 500;
 }
 
+#altrostoria{
+    grid-row: 4;
+}
+
 #dipiualt{
     color: #171717;
 }
@@ -298,7 +302,7 @@ video{
 h2{
     color: #171717;
     border-radius: 24px;
-    text-align: center;
+    text-align: left;
     font-size: 32px;
     font-variation-settings: "wdth" 142, "wght" 600;
 }
@@ -507,6 +511,10 @@ h5{
     padding: 48px 24px 0 24px;
 }
 
+#ingredienti{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .nav-link{
     color: #171717;
     background-color: #FFFEF6;
@@ -552,12 +560,14 @@ h5{
 }
 
 .testopaginasx{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
 .testopaginadx{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
     grid-row: 2;
     grid-column: 2;
@@ -570,7 +580,10 @@ h5{
     width: 1032px;
     padding: 0 24px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+}
+
+#acqua{
+    grid-template-rows: 1fr;
 }
 
 .contenutopaginatesto p{
@@ -581,4 +594,14 @@ h5{
 .contenutopaginatesto ul{
     font-family: "bitter";
     font-weight: 500;
+}
+
+.paragrafotesto{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#sinistra2{
+    grid-row: 3;
 }
