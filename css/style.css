@@ -276,7 +276,7 @@ video{
     width: 1032px;
     gap: 24px;
     margin: 0 auto;
-    padding: 128px 24px;
+    padding: 120px 24px;
     align-items: center;
 }
 
@@ -292,6 +292,9 @@ video{
     justify-content: center;
     padding-top: 24px;
     font-variation-settings: "wdth" 142, "wght" 500;
+    padding-top: 128px;
+    text-decoration: underline;
+    text-decoration-color: #FDC144;
 }
 
 #altrostoria{
@@ -300,14 +303,6 @@ video{
 
 #dipiualt{
     color: #171717;
-}
-
-.dipiu:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-decoration-color: #FDC144;
-    text-underline-offset: 6px;
-    text-decoration-skip-ink: auto;
 }
 
 h2{
@@ -380,7 +375,7 @@ svg{
     margin: auto;
     gap: 24px;
     width: 1032px;
-    padding: 0 24px;
+    padding: 50px 24px;
 }
 
 .contenuto{
@@ -415,7 +410,7 @@ p{
 }
 
 .testoinfo .intro{
-    font-size: 16px;
+    font-size: 24px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 1;
@@ -431,6 +426,17 @@ p{
     font-size: 24px;
     line-height: 160%;
     font-weight: 500;
+    margin-top: 100px;
+}
+
+.intro3{
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    line-height: 160%;
+    font-weight: 500;
+    padding-top: 1em;
 }
 
 #introhome{
@@ -453,12 +459,13 @@ p{
 }
 
 .intro1{
-    font-size: 16px;
+    font-size: 24px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 2;
     line-height: 160%;
     font-weight: 500;
+    padding-bottom: 50px;
 }
 
 .testoinfo .paragrafointro{
