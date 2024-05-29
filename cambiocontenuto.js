@@ -13,9 +13,9 @@ if (searchParams.has("type")) document.getElementById("introduzione").scrollInto
 })
 
 if (type == "acqua")  navLinks[0].classList.add("active");
-if (type == "lievito")  navLinks[1].classList.add("active");
+if (type == "lievito")  navLinks[2].classList.add("active");
 if (type == "luppolo")  navLinks[3].classList.add("active");
-if (type == "cereali")  navLinks[2].classList.add("active");
+if (type == "cereali")  navLinks[1].classList.add("active");
 
 
 

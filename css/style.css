@@ -43,6 +43,7 @@ header{
     width: 1032px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1rem;
     padding: 3vh 24px;
 }
@@ -50,9 +51,7 @@ header{
 
 .container_header a{
     position: relative;
-    font-variation-settings: "wdth" 142, "wght" 300;
-    margin: auto;   
-    font-weight: normal;
+    font-variation-settings: "wdth" 142, "wght" 200;   
 }
 
 .container_header a::after {
@@ -270,17 +269,6 @@ video{
     padding-top: 48px;
 }
 
-.testoinfo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 1032px;
-    gap: 24px;
-    margin: 0 auto;
-    padding: 120px 24px;
-    align-items: center;
-}
-
-
 
 .dipiu{
     grid-row: 3;
@@ -289,11 +277,13 @@ video{
     color: white;
     font-size: 42px;
     display: flex;
-    justify-content: center;
-    padding-top: 24px;
+    margin: auto;
     font-variation-settings: "wdth" 142, "wght" 500;
-    padding-top: 128px;
+    margin-top: 128px;
     text-decoration: underline;
+}
+
+.dipiu:hover{
     text-decoration-color: #FDC144;
 }
 
@@ -391,6 +381,13 @@ p{
 }
 
 .testoinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1032px;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 120px 24px;
+    align-items: center;
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -459,13 +456,12 @@ p{
 }
 
 .intro1{
-    font-size: 24px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    font-size: 16px;
+    grid-column-start: 3;
+    grid-column-end: 5;
     grid-row: 2;
     line-height: 160%;
     font-weight: 500;
-    padding-bottom: 50px;
 }
 
 .testoinfo .paragrafointro{
@@ -579,12 +575,15 @@ h5{
 
 .testopaginasx{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 24px;
+    grid-column: 1;
 }
 
 .testopaginadx{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 24px;
     grid-row: 2;
@@ -596,8 +595,27 @@ h5{
     margin: auto;
     gap: 24px;
     width: 1032px;
-    padding: 0 24px;
-    grid-template-columns: 1fr 1fr;
+}
+
+#produzione{
+    row-gap: 128px;
+    column-gap: 72px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    margin: auto;
+    position: relative;
+}
+
+#produzione::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #171717;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 10px;
 }
 
 #acqua{
@@ -623,3 +641,123 @@ h5{
 #sinistra2{
     grid-row: 3;
 }
+
+#destra2{
+    grid-row: 4;
+}
+
+#sinistra3{
+    grid-row: 5;
+}
+
+#destra3{
+    grid-row: 6;
+}
+
+#sinistra4{
+    grid-row: 7;
+}
+
+#destra4{
+    grid-row: 8;
+}
+
+#sinistra5{
+    grid-row: 9;
+}
+
+#destra5{
+    grid-row: 10;
+}
+
+.imgprod{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+    border: solid 6px #171717;
+    display: flex;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.contimg_dx::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 6px;
+    right: 0px;
+    background: #171717;
+    z-index: 1;
+    left: 50%;
+    margin-top: 16%;
+}
+
+.contimg_sx::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 6px;
+    right: 0px;
+    background: #171717;
+    z-index: 1;
+    right:  50%;
+    margin-top: 16%;
+}
+
+#maltazione{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#macinazione{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#ammostamento{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#filtrazione{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#bollitura{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+#raffreddamento{
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#fermentazione{
+    grid-column: 2;
+    grid-row: 7;
+}
+
+#maturazione{
+    grid-column: 1;
+    grid-row: 8;
+}
+
+#carbonatazione{
+    grid-column: 2;
+    grid-row: 9;
+}
+
+#imbottigliamento{
+    grid-column: 1;
+    grid-row: 10;
+}
+
+
+
