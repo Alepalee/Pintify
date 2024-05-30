@@ -591,6 +591,7 @@ h5{
 }
 
 .contenutopaginatesto{
+    grid-template-columns: 1fr 1fr;
     display: grid;
     margin: auto;
     gap: 24px;
@@ -616,10 +617,6 @@ h5{
     left: 50%;
     margin-left: -3px;
     border-radius: 10px;
-}
-
-#acqua{
-    grid-template-rows: 1fr;
 }
 
 .contenutopaginatesto p{
