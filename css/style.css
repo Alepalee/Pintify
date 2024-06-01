@@ -363,7 +363,7 @@ svg{
 .contenuto .contenutopagina{
     display: grid;
     margin: auto;
-    gap: 24px;
+    gap: 128px;
     width: 1032px;
     padding: 50px 24px;
 }
@@ -594,7 +594,8 @@ h5{
     grid-template-columns: 1fr 1fr;
     display: grid;
     margin: auto;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 128px;
     width: 1032px;
 }
 
@@ -608,6 +609,27 @@ h5{
 }
 
 #produzione::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #171717;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 10px;
+}
+
+#team{
+    row-gap: 128px;
+    column-gap: 72px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    margin: auto;
+    position: relative;
+}
+
+#team::after{
     content: '';
     position: absolute;
     width: 6px;
