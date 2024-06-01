@@ -59,7 +59,6 @@ header{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    border-radius: 5px;
     height: 4px;
     bottom: -4px;
     left: 0;
@@ -83,9 +82,8 @@ header{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    border-radius: 6px;
     height: 4px;
-    bottom: -4px;
+    bottom: -3px;
     left: 0;
     background: white;
     transform-origin: bottom right;
