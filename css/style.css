@@ -556,6 +556,10 @@ h5{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+#tipologie{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .nav-links{
     display: grid;
     gap: 24px;
