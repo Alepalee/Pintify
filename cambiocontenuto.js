@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  let navLinks = document.querySelectorAll(".introduzionehome .nav-link");
+  let navLinks = document.querySelectorAll(".introduzione .nav-link");
 
   const searchParams = new URLSearchParams(document.location.search);
   const type = searchParams.has("type") ? searchParams.get("type") : "ale";
