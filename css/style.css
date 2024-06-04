@@ -1438,4 +1438,12 @@ h5{
     .contenuto{
         gap: 72px;
     }
+
+    #lievito #sinistra2{
+        grid-row: 3;
+    }
+
+    .nav-link{
+        padding: 8px 64px;
+    }
 }
