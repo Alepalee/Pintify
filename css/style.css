@@ -582,10 +582,6 @@ h5{
     grid-column: 1;
 }
 
-.bandiera{
-    max-width: fit-content;
-}
-
 #ingredienti{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
