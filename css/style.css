@@ -150,8 +150,11 @@ footer{
 }
 
 .hero{
-    height: 100vh;
     background-color: #FFFEF6;
+}
+
+#herohome{
+    height: 100vh;
 }
 
 .herocont{
@@ -161,6 +164,7 @@ footer{
     max-width: 1032px;
     margin: auto;
     padding: 0 32px;
+    gap: 128px;
 }
 
 video{
@@ -238,13 +242,13 @@ video{
 .testoheroalt h1{
     display: flex;
     justify-content: center;
-    font-size: 76px;
+    font-size: 64px;
     line-height: 100%;
     font-variation-settings: "wdth" 142, "wght" 700;
 }
 
 .testohero h1{
-    font-size: 5vw;
+    font-size: 64px;
     width: 60vw;
     line-height: 100%;
     font-variation-settings: "wdth" 142, "wght" 700;
@@ -287,8 +291,9 @@ video{
     display: flex;
     margin: auto;
     font-variation-settings: "wdth" 142, "wght" 500;
-    margin-top: 128px;
     text-decoration: underline;
+    text-align: center;
+    margin-top: 128px;
 }
 
 .dipiu:hover{
@@ -309,17 +314,11 @@ h2{
     text-align: left;
     font-size: 32px;
     font-variation-settings: "wdth" 142, "wght" 600;
+    margin-bottom: 12px;
 }
 
 .container_card{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-}
-
-.container_card2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
 }
 
@@ -332,9 +331,15 @@ h2{
     align-items: center;
     justify-content: center;
     background-color: #171717;
-    border-radius: 32px;
+    border-radius: 2rem;
     color: white;
     padding: 4vh 0;
+    gap: 8px;
+}
+
+.titolocardhome{
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
 
@@ -368,6 +373,7 @@ h2{
 
 h3{
     font-variation-settings: "wdth" 142, "wght" 400;
+    text-align: center;
 }
 
 h4{
@@ -394,6 +400,10 @@ svg{
     fill: rgb(255, 255, 255);
 }
 
+#consumatori{
+    max-width: 100%;
+}
+
 .contenutopagina{
     padding: 72px 0;
 }
@@ -402,7 +412,7 @@ svg{
     max-width: 1032px;
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 128px;
     padding: 72px 32px;
 }
 
@@ -534,8 +544,6 @@ h5{
 .containertestohero{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-
 }
 
 .containertestohero .testoheroalt{
@@ -571,7 +579,7 @@ h5{
 .nav-link{
     color: #171717;
     background-color: #FFFEF6;
-    border-radius: 36px;
+    border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -643,7 +651,7 @@ h5{
 #produzione{
     row-gap: 128px;
     column-gap: 72px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
     grid-template-columns: 1fr 1fr ;
     margin: auto;
     position: relative;
@@ -836,6 +844,408 @@ h5{
 #imbottigliamento{
     grid-column: 1;
     grid-row: 10;
+}
+
+@media (max-width: 1072px){
+    .pagina{
+        max-width: 860px;
+    }
+
+    .herocont{
+        max-width: 860px;
+    }
+
+    .container_header{
+        max-width: 860px;
+    }
+
+    .container_footer{
+        max-width: 860px;
+    }
+
+    .testoinfo {
+        max-width: 860px;
+    }
+
+    .testohero h1{
+        font-size: 58px;
+    }
+
+    .contimg_dx::before {
+        margin-top: 20%;
+    }
+
+    .contimg_sx::before {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 768px){
+
+    .pagina{
+        max-width: 516px;
+    }
+
+    .testoinfo {
+        max-width: 516px;
+    }
+
+    .container_header{
+        max-width: 516px;
+    }
+
+    .container_footer{
+        max-width: 516px;
+        align-items: center;
+    }
+
+    .container_footer ul{
+        flex-direction: column;
+        align-items: end;
+        gap: 18px;
+    }
+
+
+    #introhome{
+        grid-column: 1;
+    }
+
+    .herocont{
+        max-width: 516px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        height: 80%;
+        justify-content: center;
+        gap: 32px;
+        padding: 128px 0;
+    }
+
+    .herocont img{
+        height: 200px;
+    }
+
+    .testoheroalt{
+        margin: 0;
+        height: auto;
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .frecciagiualt{
+        top: -50px;
+    } 
+
+    h1{
+        text-align: center;
+    }
+
+    .didascaliahero{
+        font-size: 20px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .containertestohero{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto;
+        row-gap: 12px;
+    }
+
+    .intro {
+        grid-column: 1;
+    }
+
+    .intro2 {
+        grid-column: 1;
+    }
+
+    .testoinfo .paragrafointro{
+        grid-column: 1;
+    }
+
+    .testoinfo{
+        grid-template-columns: 1fr;
+    }
+
+    .dipiu{
+        grid-column: 1;
+    }
+
+    #tipologie{
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #ale{
+        flex-direction: row;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+    }
+
+    #lager{
+        flex-direction: row;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #lambic{
+        flex-direction: row;
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .testoinfo .containerintro {
+        grid-column: 1;
+    }
+
+    #ingredienti{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #lievito {
+        grid-column: 1;
+    }
+
+    #luppolo {
+        grid-column: 2;
+    }
+
+    .contenutopaginatesto{
+        grid-template-columns: 1fr;
+    }
+
+    #testoresp{
+        grid-column: 1;
+    }
+
+    .titolocardhome{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #tipologie .card{
+        padding: 12px 72px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h3{
+        text-align: left;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .nav-links{
+        width: 516px;
+    }
+
+    #tipologie .nav-link{
+        padding: 8px 128px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .bandiera{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .testonazione{
+        display: flex;
+        flex-direction: column;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .testonazione h5{
+        padding: 18px 32px 18px 128px;
+    }
+
+    h5{
+        display: flex;
+        text-align: center;
+        padding: 18px 32px 18px 0;
+    }
+
+    #produzione::after{
+        left: -10%;
+    }
+
+    #team::after{
+        left: -10%;
+    }
+
+    #produzione{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 72px;
+    }
+
+    #team{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 72px;
+    }
+    #team h2{
+        text-align: left;
+    }
+
+    .conimg_dx{
+        grid-row: 2;
+    }
+
+    .contimg_dx::before{
+        left: -10%;
+        margin-top: 35%;
+    }
+
+    .contimg_sx::before{
+        left: -10%;
+        margin-top: 35%;
+    }
+
+    .testopaginadx{
+        grid-column: 1;
+    }
+
+    .testopaginasx{
+        grid-column: 1;
+    }
+
+    #maltazione{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #macinazione{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #ammostamento{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    #filtrazione{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    
+    #bollitura{
+        grid-column: 1;
+        grid-row: 9;
+    }
+    
+    #raffreddamento{
+        grid-column: 1;
+        grid-row: 11;
+    }
+    
+    #fermentazione{
+        grid-column: 1;
+        grid-row: 13;
+    }
+    
+    #maturazione{
+        grid-column: 1;
+        grid-row: 15;
+    }
+    
+    #carbonatazione{
+        grid-column: 1;
+        grid-row: 17;
+    }
+    
+    #imbottigliamento{
+        grid-column: 1;
+        grid-row: 19;
+    }
+
+    #sinistra1{
+        grid-row: 2;
+        padding-bottom: 172px;
+    }
+    
+    #destra1{
+        grid-row: 4;
+        padding-bottom: 172px;
+    }
+
+    #sinistra2{
+        grid-row: 6;
+        padding-bottom: 172px;
+    }
+    
+    #destra2{
+        grid-row: 8;
+        padding-bottom: 172px;
+    }
+    
+    #sinistra3{
+        grid-row: 10;
+        padding-bottom: 172px;
+    }
+    
+    #destra3{
+        grid-row: 12;
+        padding-bottom: 172px;
+    }
+    
+    #sinistra4{
+        grid-row: 14;
+        padding-bottom: 172px;
+    }
+    
+    #destra4{
+        grid-row: 16;
+        padding-bottom: 172px;
+    }
+    
+    #sinistra5{
+        grid-row: 18;
+        padding-bottom: 172px;
+    }
+    
+    #destra5{
+        grid-row: 20;
+    }
+
+    #daniele{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #mattia{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #alessio{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    #daniel{
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    #team #destra2{
+        padding: 0;
+    }
+
 }
 
 
