@@ -44,7 +44,7 @@ header{
     font-size: 1.5rem;
 }
 
-.container_header{
+.container_header {
     width: 1032px;
     display: flex;
     justify-content: space-between;
@@ -76,6 +76,28 @@ header{
 .container_header a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.nomesitomobile::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nomesitomobile:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nomesitomobile{
+    display: none;
 }
 
 .container_footer a{
@@ -855,7 +877,7 @@ h5{
         max-width: 860px;
     }
 
-    .container_header{
+    .container_header {
         max-width: 860px;
     }
 
@@ -878,6 +900,19 @@ h5{
     .contimg_sx::before {
         margin-top: 20%;
     }
+
+    #ingredienti{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #lievito {
+        grid-column: 1;
+    }
+
+    #luppolo {
+        grid-column: 2;
+    }
 }
 
 @media (max-width: 768px){
@@ -887,10 +922,6 @@ h5{
     }
 
     .testoinfo {
-        max-width: 516px;
-    }
-
-    .container_header{
         max-width: 516px;
     }
 
@@ -1004,7 +1035,7 @@ h5{
     }
 
     #ingredienti{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
     }
 
@@ -1042,10 +1073,6 @@ h5{
 
     h2{
         text-align: center;
-    }
-
-    .nav-links{
-        width: 516px;
     }
 
     #tipologie .nav-link{
@@ -1245,8 +1272,170 @@ h5{
     #team #destra2{
         padding: 0;
     }
-
 }
 
+@media (max-width: 602px){
 
+    .nomesitomobile{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-variation-settings: "wdth" 142, "wght" 700;
+        font-size: 1.5rem;
+    }
+    
+    .testoheroalt h1{
+        font-size: 40px;
+    }
 
+    .testohero{
+        width: 100%;
+    }
+
+    .testohero h1{
+        width: 100%;
+    }
+
+    .container_header .nomesito{
+        display: none;
+    }
+
+    .container_footer a.nomesito{
+        font-size: 1rem;
+    }
+
+    header{
+        display: grid;
+        padding: 24px;
+        gap: 12px;
+    }
+
+    .container_header  {
+        top: 0;
+        display: none;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;
+        text-align: center;
+        position:inherit;
+        top: 44px;
+        right: 0;
+        width: inherit;
+        gap: 12px;
+        padding: 0;
+        grid-row: 2;
+    }
+
+    .attivo {
+        display: grid;
+        align-items: center;
+        grid-row: 3;
+    }
+
+    nav {
+        align-self: center;
+        grid-row: 2;
+    }
+
+    .ham-menu {
+        height: 32px;
+        width: 30px;
+        position: relative;
+        margin: auto;
+    }
+
+    .ham-menu:hover{
+        cursor: pointer;;
+    }
+
+    .ham-menu span {
+        height: 4px;
+        width: 80%;
+        background-color: #171717;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+
+    .ham-menu.attivo span {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .ham-menu.attivo span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .ham-menu.attivo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.attivo span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    #luppolo{
+        grid-column: 1;
+    }
+
+    #lievito{
+        grid-column: 1;
+    }
+
+    #cereali{
+        grid-column: 1;
+    }
+
+    #produzione::after{
+        margin-left: 15px;
+    }
+
+    #team::after{
+        margin-left: 15px;
+    }
+
+    .contimg_dx::before {
+        left: -5%;
+    }
+
+    .contimg_sx::before {
+        left: -5%;
+    }
+
+    .testohero h1 {
+        font-size: 42px;
+    }
+
+    video{
+        height: 70vh;
+    }
+
+    #herohome {
+        height: 70vh;
+    }
+
+    .frecciagiu{
+        top: -100px
+    }
+
+    #tipologie .nav-link {
+        padding: 8px 64px;
+    }
+
+    .contenuto{
+        gap: 72px;
+    }
+}
