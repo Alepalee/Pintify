@@ -582,6 +582,10 @@ h5{
     grid-column: 1;
 }
 
+.bandiera{
+    max-width: fit-content;
+}
+
 #ingredienti{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -1096,7 +1100,7 @@ h5{
     }
 
     .testonazione h5{
-        padding: 18px 32px 18px 128px;
+        padding: 14px 32px 14px 128px;
     }
 
     h5{
