@@ -868,6 +868,31 @@ h5{
     grid-row: 10;
 }
 
+.introinfo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.fonte{
+    color: #b7b7b7;
+    text-decoration: underline;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 22px;    
+    font-variation-settings: "wdth" 142, "wght" 200;
+}
+
+.introinfo h2{
+    font-variation-settings: "wdth" 142, "wght" 500;
+
+}
+
+.fonte:hover{
+    color: #FFFEF6;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #FDC144;
+}
+
 @media (max-width: 1072px){
     .pagina{
         max-width: 860px;
