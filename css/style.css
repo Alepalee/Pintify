@@ -1429,11 +1429,13 @@ h5{
     }
 
     .contimg_dx::before {
-        left: -5%;
+        left: -6%;
+        margin-top: 35%;
     }
 
     .contimg_sx::before {
-        left: -5%;
+        left: -6%;
+        margin-top: 35%;
     }
 
     .testohero h1 {
@@ -1466,5 +1468,17 @@ h5{
 
     .nav-link{
         padding: 8px 64px;
+    }
+}
+
+@media (max-width: 400px){
+    .contimg_dx::before {
+        left: -5%;
+        margin-top: 50%;
+    }
+
+    .contimg_sx::before {
+        left: -5%;
+        margin-top: 50%;
     }
 }
