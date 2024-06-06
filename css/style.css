@@ -893,6 +893,10 @@ h5{
     text-decoration-color: #FDC144;
 }
 
+.elencolambic li{
+    padding-top: 8px;
+}
+
 @media (max-width: 1072px){
     .pagina{
         max-width: 860px;
