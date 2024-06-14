@@ -84,7 +84,7 @@ header{
     width: 100%;
     transform: scaleX(0);
     height: 4px;
-    bottom: -4px;
+    bottom: -2px;
     left: 0;
     background: white;
     transform-origin: bottom right;
@@ -1308,7 +1308,7 @@ h5{
     .nomesitomobile{
         position: relative;
         display: flex;
-        justify-content: center;
+        margin: auto;
         text-transform: uppercase;
         font-variation-settings: "wdth" 142, "wght" 700;
         font-size: 1.5rem;
@@ -1332,8 +1332,10 @@ h5{
 
     header{
         display: grid;
+        grid-template-columns: 1fr 1fr;
         padding: 24px;
         gap: 12px;
+        column-gap: 128px;
     }
 
     .container_header  {
@@ -1356,12 +1358,14 @@ h5{
     .attivo {
         display: grid;
         align-items: center;
-        grid-row: 3;
+        grid-row: 2;
+        grid-column: 2;
     }
 
     nav {
         align-self: center;
-        grid-row: 2;
+        grid-row: 1;
+        grid-column: 2;
     }
 
     .ham-menu {
