@@ -30,6 +30,9 @@ header{
     align-items: center;
     justify-content: center;
     background-color: #FDC144;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .container_header a.nomesito{
